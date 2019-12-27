@@ -7,6 +7,7 @@ Gathering folders and message count is a background thread so that the UI can be
 Saving to disk is also a background thread.  The message count is reduced per folder to reflect process
 
 
+MailKit and MimeKit are used for IMAP communication.
 
 
 
