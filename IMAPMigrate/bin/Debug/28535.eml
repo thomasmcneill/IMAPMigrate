@@ -1,0 +1,255 @@
+Delivered-To: jtownsend@eragrizzard.com
+Received: by 10.129.116.86 with SMTP id p83csp5776591ywc;
+        Mon, 14 Aug 2017 05:49:26 -0700 (PDT)
+X-Received: by 10.202.235.4 with SMTP id j4mr28452690oih.43.1502714966139;
+        Mon, 14 Aug 2017 05:49:26 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1502714966; cv=none;
+        d=google.com; s=arc-20160816;
+        b=hFCR1PbeQzADhBlkP1ZlSCRAPH4ZInec1S3U+A3pnbxk23lNoCid5CZgMv+wQTV8Fv
+         2V7vo/q7HqDndFGeI7OAxgH/l/LbLApkP/5Fq2zcsISomEiCl0q+WNXLwKlB+FIvHPQs
+         ce0pVNrErc+rFw3j3ezk465xuRGIhzhRTNQpkorkjPBawSqyqEPOSUfFmuHFYHDGqIWF
+         Hnvh9b3/wsRsTbSuO+9ZEpv48rje1pHQyW49aj7N6554AxUJz8qfRADpafqKgS0INcxR
+         GHm7jnEWcUW9dnXDO9w8T5bx05/Tqvt3220N5NSTqMBxOg8nPHxwgncybFVT5OwFiV5/
+         NyXA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:spamdiagnosticmetadata:spamdiagnosticoutput
+         :content-language:accept-language:message-id:date:thread-index
+         :thread-topic:subject:to:from:dkim-signature
+         :arc-authentication-results;
+        bh=L1R9U104kmmtbhjcoNL1xjihRpspUC7f7XCrY+ostyo=;
+        b=QOcZJdhfMhnvbI/RKx7KE0gxbQFUu9C4e8jAJXxNmN1lRoX8se/fFUOCEdjZg5S/qL
+         uk3Vbp5U2Yie+QTpvyIpAoMrLZkOSOd+ouKqDjk/qMzsIdH7tSbeHzg94wSneDUC2MEG
+         9skXnbxcBwTM+UQKB3RlIqhWCZhV8/LQwTXhRaU1HCXKSYlZ1t0R5vd5QwPXoCbadKZw
+         9sC4nsp7h/K+YU9U4bi0ppwEO93UvYs53PUv8kz986KpyvBLK5PNwW0aLIh2ICoWaVRB
+         rQ0XGQfTahPeGm1zGMH8gOsYfFUzRaxyz2PVLwd52dZaSS8s18X3zahV8qkE5mk/CVeT
+         cthA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@anixter.onmicrosoft.com header.s=selector1-anixter-com header.b=RQBRg2rf;
+       spf=pass (google.com: domain of nanette.matthews@anixter.com designates 104.47.37.47 as permitted sender) smtp.mailfrom=nanette.matthews@anixter.com
+Return-Path: <nanette.matthews@anixter.com>
+Received: from NAM02-CY1-obe.outbound.protection.outlook.com (mail-cys01nam02on0047.outbound.protection.outlook.com. [104.47.37.47])
+        by mx.google.com with ESMTPS id r138si4379747oie.296.2017.08.14.05.49.25
+        for <jtownsend@eragrizzard.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Mon, 14 Aug 2017 05:49:26 -0700 (PDT)
+Received-SPF: pass (google.com: domain of nanette.matthews@anixter.com designates 104.47.37.47 as permitted sender) client-ip=104.47.37.47;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@anixter.onmicrosoft.com header.s=selector1-anixter-com header.b=RQBRg2rf;
+       spf=pass (google.com: domain of nanette.matthews@anixter.com designates 104.47.37.47 as permitted sender) smtp.mailfrom=nanette.matthews@anixter.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=anixter.onmicrosoft.com; s=selector1-anixter-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version;
+ bh=L1R9U104kmmtbhjcoNL1xjihRpspUC7f7XCrY+ostyo=;
+ b=RQBRg2rfEjhfBw+qj8oHY0E99nZkII7rJ994ZLNZriGptkKaVyukUFMcuXCiYUVa5URJQ9C/q4AeDKFukD8paP2ooG1/xG0FJ+koKswKy1P1msS1l5E0515TGPkbjnEU35lChRFR/xwiGigGZLQmQ6gz3ULOSdeTBsjBDfJjSrQ=
+Received: from BN3PR04MB2146.namprd04.prod.outlook.com (10.166.75.21) by
+ BN3PR04MB2146.namprd04.prod.outlook.com (10.166.75.21) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id
+ 15.1.1341.21; Mon, 14 Aug 2017 12:49:24 +0000
+Received: from BN3PR04MB2146.namprd04.prod.outlook.com ([10.166.75.21]) by
+ BN3PR04MB2146.namprd04.prod.outlook.com ([10.166.75.21]) with mapi id
+ 15.01.1341.020; Mon, 14 Aug 2017 12:49:24 +0000
+From: Nanette Matthews <nanette.matthews@anixter.com>
+To: "Julie Townsend " <jtownsend@eragrizzard.com>
+Subject: Emailing: Permit Search by Owners Name - Permit Activity Reports
+Thread-Topic: Emailing: Permit Search by Owners Name - Permit Activity Reports
+Thread-Index: AdMU+37DVAQbaSFoRlOE7cLhqxnLnA==
+Date: Mon, 14 Aug 2017 12:49:24 +0000
+Message-ID: <BN3PR04MB2146DE202BEDC0E6A9997CE1828C0@BN3PR04MB2146.namprd04.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+authentication-results: spf=none (sender IP is )
+ smtp.mailfrom=nanette.matthews@anixter.com; 
+x-originating-ip: [149.128.8.208]
+x-ms-publictraffictype: Email
+x-microsoft-exchange-diagnostics: 1;BN3PR04MB2146;6:dyrb4nOwAw9yEjOkpJpmYA88VVOHk2wAi9cHy+f5NZnc6EFik3S7mKMyigAByj0GdqZMhG0kUdNN3uLa0eYJnq7E3Fey3axuvwmP5EVrVNMTKty/spG1EPey1sXLR590j9sxEigaEJURKMCyXFL/wznIXzPtHi9PtEIdUlQpWJtKHnPdRZe+E89T0H7CIzRU1PH3h4vffuxWleRO0GW9GxeleJeuMaEWdriQWBVSrwgxzqHhOeGWLN+Br9VMR+h8GeW0+JIDp4RszC7wAb7KjQE9wgAZexM0pArirSLhriRUmKYV/ui0viM5I6Lpy9gFGX+j+VG3cydhO4OacfExPg==;5:pYqZAEcRmmA+iWNiIa5p9bCqBM/RU6r2UXwQ/HeXD5VGWs8EG0Uk0Zjsf5Ee6H3rCGuoi8GrlAMQNiVrBpAbTrIoMUp736Qt/eSAlr2rGnMCy6u9X89c+/ob9n5K7Mc64vB6jg5AaJEOoOFQmw7Vfg==;24:i3kf6vo3oRipadtHOrPXb/99MqAHNFeJqVZt4cbpdBr+jNUg1iGBloGWzZaDfsdoSjrBssVnOJA6kr9EX9vQZC79yG7qVtgkbtB6+W0iLkM=;7:+eSv8rRmT8mkUJgxytz1W4e/vGTgGUOySO56E5H5YaxftxqVMjXIrqeJ4YZgBlos2R3LGNAhr2KhgjfeG0zi+Bd879vre3KTvbSdKURIpbdmng21IsJvXHnWwKSHRd3vH6xtj+2TU9NjwZhmzMmZ+UfxzHY8yncBArn65y1kDEdGMAz3CGJzcHnKWtNGQk1skVtv+Ehmco4TrOK4sAPAalQxyZqwFhHdQDIh3YcioBI=
+x-ms-exchange-antispam-srfa-diagnostics: SSOS;
+x-ms-office365-filtering-correlation-id: c879a448-a4fe-498d-13f6-08d4e312e430
+x-ms-office365-filtering-ht: Tenant
+x-microsoft-antispam: UriScan:;BCL:0;PCL:0;RULEID:(300000500095)(300135000095)(300000501095)(300135300095)(300000502095)(300135100095)(22001)(2017030254152)(48565401081)(300000503095)(300135400095)(2017052603031)(49563074)(201703131423075)(201703031133081)(201702281549075)(300000504095)(300135200095)(300000505095)(300135600095)(300000506095)(300135500095);SRVR:BN3PR04MB2146;
+x-ms-traffictypediagnostic: BN3PR04MB2146:
+x-exchange-antispam-report-test: UriScan:(20558992708506)(192374486261705)(21748063052155)(17755550239193);
+x-microsoft-antispam-prvs: <BN3PR04MB2146CB8EB25DA13D14ECF636828C0@BN3PR04MB2146.namprd04.prod.outlook.com>
+x-exchange-antispam-report-cfa-test: BCL:0;PCL:0;RULEID:(100000700101)(100105000095)(100000701101)(100105300095)(100000702101)(100105100095)(102415395)(6040450)(601004)(2401047)(8121501046)(5005006)(93006095)(93001095)(100000703101)(100105400095)(10201501046)(3002001)(6055026)(6041248)(20161123558100)(20161123560025)(201703131423075)(201702281528075)(201703061421075)(201703061406153)(20161123564025)(20161123562025)(20161123555025)(6072148)(201708071742011)(100000704101)(100105200095)(100000705101)(100105500095);SRVR:BN3PR04MB2146;BCL:0;PCL:0;RULEID:(100000800101)(100110000095)(100000801101)(100110300095)(100000802101)(100110100095)(100000803101)(100110400095)(100000804101)(100110200095)(100000805101)(100110500095);SRVR:BN3PR04MB2146;
+x-forefront-prvs: 039975700A
+x-forefront-antispam-report: SFV:NSPM;SFS:(10009020)(6009001)(39860400002)(199003)(189002)(55016002)(9686003)(68736007)(54896002)(2906002)(86362001)(99286003)(7696004)(3660700001)(50986999)(54356999)(5890100001)(110136004)(105586002)(790700001)(3846002)(6116002)(102836003)(99936001)(5660300001)(33656002)(106356001)(74316002)(101416001)(6306002)(966005)(3280700002)(53936002)(77096006)(97736004)(6916009)(8936002)(189998001)(7736002)(14454004)(8676002)(25786009)(6436002)(2900100001)(478600001)(66066001)(81156014)(81166006)(6506006);DIR:OUT;SFP:1101;SCL:1;SRVR:BN3PR04MB2146;H:BN3PR04MB2146.namprd04.prod.outlook.com;FPR:;SPF:None;PTR:InfoNoRecords;A:1;MX:1;LANG:en;
+received-spf: None (protection.outlook.com: anixter.com does not designate
+ permitted sender hosts)
+spamdiagnosticoutput: 1:99
+spamdiagnosticmetadata: NSPM
+Content-Type: multipart/mixed;
+	boundary="_004_BN3PR04MB2146DE202BEDC0E6A9997CE1828C0BN3PR04MB2146namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: anixter.com
+X-MS-Exchange-CrossTenant-originalarrivaltime: 14 Aug 2017 12:49:24.1011
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: ff86d154-e37b-4fd7-a32d-64241a95e211
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN3PR04MB2146
+
+--_004_BN3PR04MB2146DE202BEDC0E6A9997CE1828C0BN3PR04MB2146namp_
+Content-Type: multipart/alternative;
+	boundary="_000_BN3PR04MB2146DE202BEDC0E6A9997CE1828C0BN3PR04MB2146namp_"
+
+--_000_BN3PR04MB2146DE202BEDC0E6A9997CE1828C0BN3PR04MB2146namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hey I thought of you when Greg told me how to find this site. If it doesn't=
+ open then copy, paste link below and save for future use. I couldn't get i=
+t to put a link on my email for some reason.
+
+
+
+We went by that house at 10847 Yale Cove Rd. Leesburg. Interesting.
+
+What would be the chance of looking inside?
+
+
+
+Nan
+
+
+
+Your message is ready to be sent with the following file or link attachment=
+s:
+
+
+Shortcut to: https://www.lakecountyfl.gov/departments/economic_growth/build=
+ing_services/permit_activity_reports/permit_search_by_address.aspx
+
+
+
+Note: To protect against computer viruses, e-mail programs may prevent send=
+ing or receiving certain types of file attachments.  Check your e-mail secu=
+rity settings to determine how attachments are handled.
+
+--_000_BN3PR04MB2146DE202BEDC0E6A9997CE1828C0BN3PR04MB2146namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-priority:99;
+	mso-style-link:"Plain Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.5pt;
+	font-family:Consolas;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Plain Text";
+	font-family:Consolas;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Arial",sans-serif;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoPlainText">Hey I thought of you when Greg told me how to fin=
+d this site. If it doesn't open then copy, paste link below and save for fu=
+ture use. I couldn't get it to put a link on my email for some reason.<o:p>=
+</o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">We went by that house at 10847 Yale Cove Rd. Lees=
+burg. Interesting.<o:p></o:p></p>
+<p class=3D"MsoPlainText">What would be the chance of looking inside?<o:p><=
+/o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Nan <o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText"><o:p></o:p></p>
+<p class=3D"MsoPlainText">Your message is ready to be sent with the followi=
+ng file or link attachments:<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Shortcut to: https://www.lakecountyfl.gov/department=
+s/economic_growth/building_services/permit_activity_reports/permit_search_b=
+y_address.aspx<span style=3D"font-size:10.5pt;line-height:107%;font-family:=
+Consolas"><o:p></o:p></span></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Note: To protect against computer viruses, e-mail=
+ programs may prevent sending or receiving certain types of file attachment=
+s.&nbsp; Check your e-mail security settings to determine how attachments a=
+re handled.<o:p></o:p></p>
+</div>
+</body>
+</html>
+
+--_000_BN3PR04MB2146DE202BEDC0E6A9997CE1828C0BN3PR04MB2146namp_--
+
+--_004_BN3PR04MB2146DE202BEDC0E6A9997CE1828C0BN3PR04MB2146namp_
+Content-Type: application/octet-stream;
+	name="Permit Search by Owners Name - Permit Activity Reports.url"
+Content-Description: Permit Search by Owners Name - Permit Activity
+ Reports.url
+Content-Disposition: attachment;
+	filename="Permit Search by Owners Name - Permit Activity Reports.url";
+	size=612; creation-date="Fri, 11 Aug 2017 19:08:05 GMT";
+	modification-date="Fri, 11 Aug 2017 19:08:05 GMT"
+Content-Transfer-Encoding: base64
+
+W0RFRkFVTFRdDQpCQVNFVVJMPWh0dHBzOi8vd3d3Lmxha2Vjb3VudHlmbC5nb3YvZGVwYXJ0bWVu
+dHMvZWNvbm9taWNfZ3Jvd3RoL2J1aWxkaW5nX3NlcnZpY2VzL3Blcm1pdF9hY3Rpdml0eV9yZXBv
+cnRzL3Blcm1pdF9zZWFyY2hfYnlfYWRkcmVzcy5hc3B4DQpbRE9DXzowLmNvbnRhaW5lcl0NCkJB
+U0VVUkw9aHR0cHM6Ly93d3cubGFrZWNvdW50eWZsLmdvdi9kZXBhcnRtZW50cy9lY29ub21pY19n
+cm93dGgvYnVpbGRpbmdfc2VydmljZXMvcGVybWl0X2FjdGl2aXR5X3JlcG9ydHMvcGVybWl0X3Nl
+YXJjaF9ieV9hZGRyZXNzLmFzcHgNCk9SSUdVUkw9amF2YXNjcmlwdDonJw0KW3swMDAyMTRBMC0w
+MDAwLTAwMDAtQzAwMC0wMDAwMDAwMDAwNDZ9XQ0KUHJvcDM9MTksMTENCltJbnRlcm5ldFNob3J0
+Y3V0XQ0KVVJMPWh0dHBzOi8vd3d3Lmxha2Vjb3VudHlmbC5nb3YvZGVwYXJ0bWVudHMvZWNvbm9t
+aWNfZ3Jvd3RoL2J1aWxkaW5nX3NlcnZpY2VzL3Blcm1pdF9hY3Rpdml0eV9yZXBvcnRzL3Blcm1p
+dF9zZWFyY2hfYnlfYWRkcmVzcy5hc3B4DQpJRExpc3Q9DQpJY29uRmlsZT1odHRwczovL3d3dy5s
+YWtlY291bnR5ZmwuZ292L2Zhdmljb24uaWNvDQpJY29uSW5kZXg9MQ0K
+
+--_004_BN3PR04MB2146DE202BEDC0E6A9997CE1828C0BN3PR04MB2146namp_--

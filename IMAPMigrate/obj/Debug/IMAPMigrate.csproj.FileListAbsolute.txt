@@ -1,0 +1,16 @@
+A:\Google Drive\Projects\IMAPMigrate\IMAPMigrate\IMAPMigrate\obj\Debug\IMAPMigrate.csprojAssemblyReference.cache
+A:\Google Drive\Projects\IMAPMigrate\IMAPMigrate\IMAPMigrate\obj\Debug\IMAPMigrate.Form1.resources
+A:\Google Drive\Projects\IMAPMigrate\IMAPMigrate\IMAPMigrate\obj\Debug\IMAPMigrate.Properties.Resources.resources
+A:\Google Drive\Projects\IMAPMigrate\IMAPMigrate\IMAPMigrate\obj\Debug\IMAPMigrate.csproj.GenerateResource.cache
+A:\Google Drive\Projects\IMAPMigrate\IMAPMigrate\IMAPMigrate\obj\Debug\IMAPMigrate.csproj.CoreCompileInputs.cache
+A:\Google Drive\Projects\IMAPMigrate\IMAPMigrate\IMAPMigrate\bin\Debug\IMAPMigrate.exe.config
+A:\Google Drive\Projects\IMAPMigrate\IMAPMigrate\IMAPMigrate\bin\Debug\IMAPMigrate.exe
+A:\Google Drive\Projects\IMAPMigrate\IMAPMigrate\IMAPMigrate\bin\Debug\IMAPMigrate.pdb
+A:\Google Drive\Projects\IMAPMigrate\IMAPMigrate\IMAPMigrate\bin\Debug\BouncyCastle.Crypto.dll
+A:\Google Drive\Projects\IMAPMigrate\IMAPMigrate\IMAPMigrate\bin\Debug\MailKit.dll
+A:\Google Drive\Projects\IMAPMigrate\IMAPMigrate\IMAPMigrate\bin\Debug\MimeKit.dll
+A:\Google Drive\Projects\IMAPMigrate\IMAPMigrate\IMAPMigrate\bin\Debug\MailKit.xml
+A:\Google Drive\Projects\IMAPMigrate\IMAPMigrate\IMAPMigrate\bin\Debug\MimeKit.xml
+A:\Google Drive\Projects\IMAPMigrate\IMAPMigrate\IMAPMigrate\obj\Debug\IMAPMigrate.csproj.CopyComplete
+A:\Google Drive\Projects\IMAPMigrate\IMAPMigrate\IMAPMigrate\obj\Debug\IMAPMigrate.exe
+A:\Google Drive\Projects\IMAPMigrate\IMAPMigrate\IMAPMigrate\obj\Debug\IMAPMigrate.pdb
